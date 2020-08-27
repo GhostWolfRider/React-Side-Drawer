@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sidebar {
+  position: absolute;
+  left: -200px;
+  height: 100%;
+  width: 200px;
+  transition: left 0.3s ease-in-out;
+  background-color: white;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  right: -20px;
+  height: 24px;
+  width: 24px;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  background-color: lightgray;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.content.open {
+  left: 200px;
+}
